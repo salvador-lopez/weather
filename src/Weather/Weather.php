@@ -21,9 +21,9 @@ class Weather
     /**
      * @param Client $guzzle
      */
-    public function __construct(Client $guzzle)
+    public function __construct()
     {
-        $this->guzzle = $guzzle;
+        $this->guzzle = new Client();
     }
 
     public function getStatusFromCity($cityName)
